@@ -1,4 +1,4 @@
-const colors = ["green", "red", "purple", "orange", "yellow", "blue",];
+const colors = ["green", "red", "purple", "orange", "yellow", "blue"];
 
 /* Targetting html elements */
 const btn = document.getElementById("btn");
@@ -20,4 +20,7 @@ btn.addEventListener("click", function () {
 
     /* Change the color of the text according to the random color */
     color.textContent = colors[randomNumber];
+
+    /* Change text color according to the random number */
+    color.style.color = colors[randomNumber];
 })

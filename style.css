@@ -50,7 +50,7 @@ ul {
 nav a {
     text-decoration: none;
     color: var(--black-clr);
-    transition-duration: 0.4s;
+    transition-duration: 5s;
 }
 
 nav a:hover {
@@ -98,6 +98,7 @@ Main section
 .color {
     color: var(--main-clr);
     letter-spacing: 0;
+    transition: .5s color;
 }
 
 .btn {
