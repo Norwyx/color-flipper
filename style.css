@@ -1,0 +1,14 @@
+:root {
+    --main-clr: hsl(205, 78%, 60%);
+    --grey-clr: hsl(209, 23%, 60%);
+    --black-clr: #222;
+    --white-clr: #fff;
+    --ff-primary: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
