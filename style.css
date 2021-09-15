@@ -120,3 +120,48 @@ Main section
     color: var(--white-clr);
     background-color: var(--black-clr);
 }
+
+/* Tablet version */
+@media only screen and (max-width: 60.3125rem) {
+    #title {
+        margin-left: 3rem;
+    }  
+    
+    .nav-links {
+        margin-right: 3rem;
+    }
+}
+
+/* Mobile version */
+@media only screen and (max-width: 26.5625rem) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav {
+        height: 12.5rem;
+        display: grid;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin: 1rem 2rem 1rem 0;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    #title {
+        margin: 1rem 0 0 0;
+    }
+
+    .container {
+        padding-top: 5rem;
+        height: 60vh;
+    }
+    
+    .container h2 {
+        padding: 2rem;
+        margin: 1.5rem;
+    }
+}
