@@ -1,9 +1,10 @@
 :root {
     --main-clr: hsl(205, 78%, 60%);
     --grey-clr: hsl(209, 23%, 60%);
-    --black-clr: #222;
     --white-clr: #fff;
+    --black-clr: #222;
     --ff-primary: 'Inter', sans-serif;
+    --box-shadow-nav: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -12,3 +13,107 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--ff-primary);
+    color: var(--black-clr);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* 
+Navbar
+*/
+nav {
+    height: 6.25rem;
+    display: grid;
+    align-items: center;
+    box-shadow: var(--box-shadow-nav);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    text-transform: capitalize;
+    margin-right: 15rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black-clr);
+    transition-duration: 0.4s;
+}
+
+nav a:hover {
+    color: var(--main-clr);
+}
+
+li {
+    margin-left: 2rem;
+}
+
+#title {
+    text-transform: capitalize;
+    color: var(--main-clr);
+    margin-left: 15rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* 
+Main section
+*/
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.container h2 {
+    background-color: var(--black-clr);
+    color: var(--white-clr);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 3rem;
+    border-radius: 15px;
+    margin-bottom: 2.5rem;
+}
+
+.color {
+    color: var(--main-clr);
+    letter-spacing: 0;
+}
+
+.btn {
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--clr-black);
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    transition: 0.4s;
+    border: 2px solid var(--black-clr);
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+.btn:hover {
+    color: var(--white-clr);
+    background-color: var(--black-clr);
+}
